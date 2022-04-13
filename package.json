@@ -1,0 +1,30 @@
+{
+  "name": "desafiomocks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julianespa/desafioMocks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julianespa/desafioMocks/issues"
+  },
+  "homepage": "https://github.com/julianespa/desafioMocks#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "faker": "^5.5.3",
+    "knex": "^1.0.7",
+    "multer": "^1.4.4",
+    "mysql2": "^2.3.3",
+    "socket.io": "^4.4.1"
+  }
+}

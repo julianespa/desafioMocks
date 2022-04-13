@@ -1,0 +1,21 @@
+<head>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<div id="product-container">
+    <% if (products) { %>
+        <table>
+            <thead>
+                <td>Title</td>
+                <td>Price</td>
+                <td>Image</td>
+            </thead>
+            <% products.forEach(product => { %>
+                <tr>
+                    <td><%=product.name %>  </td>
+                    <td><%= product.price %>  </td>
+                    <td><img src="<%= product.image %> " alt="imagen "+<%= product.name %> >  </td>
+                </tr>
+            <% }) %>
+        </table>
+    <% } else { return `<h2> No products</h2>`} %>
+</div>
