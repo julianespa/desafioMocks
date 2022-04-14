@@ -20,25 +20,42 @@ form.addEventListener('submit',(e)=>handleSubmit(e,e.target,'/'))
 let email = document.getElementById('email')
 let chatBox= document.getElementById('chatBox')
 let chatForm = document.getElementById('chatForm')
+let name = document.getElementById('name')
+let lastName = document.getElementById('lastName')
+let age = document.getElementById('age')
+let avatar = document.getElementById('avatar')
+let userName = document.getElementById('userName')
 
 const handleChatForm = (e)=>{
     e.preventDefault()
-        let date = new Date()
-        let y = date.getFullYear()
-        let m = date.getMonth()+1
-        let d = date.getDate()
-        let h = date.getHours()
-        let min = date.getMinutes()
+        // let date = new Date()
+        // let y = date.getFullYear()
+        // let m = date.getMonth()+1
+        // let d = date.getDate()
+        // let h = date.getHours()
+        // let min = date.getMinutes()
         if(chatBox.value.trim().length > 0 && email.value.trim().length > 0){
             socket.emit('message',{
-                email:email.value,
-                date:`${y}/${m}/${d} ${h}:${min}`,
-                message:chatBox.value
+                author: {
+                    id: email.value,
+                    nombre: name.value,
+                    apellido: lastName.value,
+                    edad: parseInt(age.value),
+                    alias: userName.value,
+                    avatar: avatar.value
+                },
+                text:chatBox.value
             })
             chatBox.value = ''
             email.value = ''
+            name.value = ''
+            lastName.value = ''
+            userName.value = ''
+            avatar.value = ''
+            age.value = null
         }
         else {console.log('fallo')}
+        
 }
 chatForm.addEventListener('submit',(e)=>{
     handleChatForm(e)

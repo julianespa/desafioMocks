@@ -1,4 +1,7 @@
 const knex = require('knex')
+const fs = require('fs')
+
+const pathToLog = __dirname+'/../files/log.json'
 
 class LogManager{
     constructor(options,tableName){
@@ -7,16 +10,26 @@ class LogManager{
     }
 
     add = async (obj) => {
-        let tableExist = await this.database.schema.hasTable(this.tableName)
-        if(!tableExist){
-            await this.database.schema.createTable(this.tableName,table =>{
-                table.increments('id')
-                table.string('email').nullable(false)
-                table.string('date').nullable(false)
-                table.string('message').nullable(false)
-            })
+        // let tableExist = await this.database.schema.hasTable(this.tableName)
+        // if(!tableExist){
+        //     await this.database.schema.createTable(this.tableName,table =>{
+        //         table.increments('id')
+        //         table.string('email').nullable(false)
+        //         table.string('date').nullable(false)
+        //         table.string('message').nullable(false)
+        //     })
+        // }
+        // await this.database.from(this.tableName).insert(obj)
+
+        if(fs.existsSync(pathToLog)){
+            let data = await fs.promises.readFile(pathToLog,'utf-8')
+            let logs = JSON.parse(data)
+            logs.push(obj)
+            await fs.promises.writeFile(pathToLog,JSON.stringify(logs,null,2))
+            return{status:'success',message:'log added'}
         }
-        await this.database.from(this.tableName).insert(obj)
+        await fs.promises.writeFile(pathToLog,JSON.stringify([obj],null,2))
+
         return{status:'success',message:'log added'}
     }
 
