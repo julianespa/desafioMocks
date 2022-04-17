@@ -1,3 +1,4 @@
+
 const socket = io()
 
 // Formulario de ingreso de productos
@@ -80,10 +81,18 @@ socket.on('productLog',data=>{
 
 socket.on('log',data=>{
     let log = document.getElementById('log')
+    let ratio = document.getElementById('ratio')
     let messages = ''
     
-    data.forEach(message => {
+    const author = new normalizr.schema.Entity('authors')
+    const mensajesS = {author:author}
+
+    const denormalizedData = normalizr.denormalize(data.normalizedData.result,[mensajesS],data.normalizedData.entities)
+
+    denormalizedData.forEach(message => {
         messages = messages+`<span class="email">${message.author.id}</span> <span class="date">${message.author.alias}</span> dice <span class="message">${message.text}</span> <br>`
     });
+
+    ratio.innerHTML = `Porcentaje de compresion de datos: ${Math.floor((1-(data.normalLength/data.normalizedLength))*100)}%`
     log.innerHTML = messages
 })

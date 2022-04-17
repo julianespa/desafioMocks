@@ -2,89 +2,155 @@
   {
     "author": {
       "id": "julianespa12@gmail.com",
-      "nombre": "hfghd",
-      "apellido": "ght3",
-      "edad": "34",
-      "alias": "hhgd",
-      "avatar": "345fgtdf"
+      "nombre": "julian",
+      "apellido": "espasandin",
+      "edad": 24,
+      "alias": "julianespa",
+      "avatar": "123"
     },
-    "text": "hohohoh"
+    "text": "hola"
+  },
+  {
+    "author": {
+      "id": "luciabertone16@gmail.com",
+      "nombre": "lucia",
+      "apellido": "bertone",
+      "edad": 25,
+      "alias": "lulabertone",
+      "avatar": "456"
+    },
+    "text": "hola2"
   },
   {
     "author": {
       "id": "julianespa12@gmail.com",
       "nombre": "julian",
       "apellido": "espasandin",
-      "edad": "345",
+      "edad": 24,
       "alias": "julianespa",
-      "avatar": "jojsoj"
+      "avatar": "123"
     },
-    "text": "holahla"
+    "text": "prueba1"
   },
   {
     "author": {
       "id": "julianespa12@gmail.com",
-      "nombre": "juju",
-      "apellido": "juj",
-      "edad": 456,
-      "alias": "jhg",
-      "avatar": "jghf"
+      "nombre": "julian",
+      "apellido": "espasandin",
+      "edad": 24,
+      "alias": "julianespa",
+      "avatar": "123"
     },
-    "text": "jetjhjfgh"
+    "text": "prueba 2"
+  },
+  {
+    "author": {
+      "id": "julianespa12@gmail.com",
+      "nombre": "julian",
+      "apellido": "espasandin",
+      "edad": 24,
+      "alias": "julianespa",
+      "avatar": "123"
+    },
+    "text": "hola"
   },
   {
     "author": {
       "id": "luciabertone16@gmail.com",
+      "nombre": "lucia",
+      "apellido": "bertone",
+      "edad": 25,
+      "alias": "lulabertone",
+      "avatar": "456"
+    },
+    "text": "hola2"
+  },
+  {
+    "author": {
+      "id": "julianespa12@gmail.com",
       "nombre": "julian",
-      "apellido": "julian",
-      "edad": 123,
-      "alias": "julian",
-      "avatar": "julian"
+      "apellido": "espasandin",
+      "edad": 24,
+      "alias": "julianespa",
+      "avatar": "123"
     },
-    "text": "julian"
+    "text": "prueba1"
   },
   {
     "author": {
       "id": "julianespa12@gmail.com",
-      "nombre": "gdfghdfgf",
-      "apellido": "gfdgsfg",
-      "edad": 455,
-      "alias": "fsgdfg",
-      "avatar": "gdfsg"
+      "nombre": "julian",
+      "apellido": "espasandin",
+      "edad": 24,
+      "alias": "julianespa",
+      "avatar": "123"
     },
-    "text": "fdgsfdg"
+    "text": "prueba 2"
   },
   {
     "author": {
       "id": "julianespa12@gmail.com",
-      "nombre": "ghjgj",
-      "apellido": "ghfjfhj",
-      "edad": 55,
-      "alias": "hfjghj",
-      "avatar": "fjhgfgh"
+      "nombre": "julian",
+      "apellido": "espasandin",
+      "edad": 24,
+      "alias": "julianespa",
+      "avatar": "123"
     },
-    "text": "hjfj"
+    "text": "hola"
   },
   {
     "author": {
-      "id": "jfghj@gg.n",
-      "nombre": "jfghj",
-      "apellido": "hfjhj",
-      "edad": 34,
-      "alias": "hjghjf",
-      "avatar": "jfghjf"
+      "id": "luciabertone16@gmail.com",
+      "nombre": "lucia",
+      "apellido": "bertone",
+      "edad": 25,
+      "alias": "lulabertone",
+      "avatar": "456"
     },
-    "text": "jfghjfj"
+    "text": "hola2"
   },
   {
     "author": {
       "id": "julianespa12@gmail.com",
-      "nombre": "nbvn",
-      "apellido": "bvncbn",
-      "edad": 34,
-      "alias": "nbvcn",
-      "avatar": "bnc"
+      "nombre": "julian",
+      "apellido": "espasandin",
+      "edad": 24,
+      "alias": "julianespa",
+      "avatar": "123"
     },
-    "text": "ncbvn"
+    "text": "prueba1"
+  },
+  {
+    "author": {
+      "id": "julianespa12@gmail.com",
+      "nombre": "julian",
+      "apellido": "espasandin",
+      "edad": 24,
+      "alias": "julianespa",
+      "avatar": "123"
+    },
+    "text": "prueba 2"
+  },
+  {
+    "author": {
+      "id": "luciabertone16@gmail.com",
+      "nombre": "lucia",
+      "apellido": "bertone",
+      "edad": 25,
+      "alias": "lulabertone",
+      "avatar": "456"
+    },
+    "text": "prueba3"
+  },
+  {
+    "author": {
+      "id": "julianespa12@gmail.com",
+      "nombre": "julian",
+      "apellido": "espasandin",
+      "edad": 24,
+      "alias": "julianespa",
+      "avatar": "123"
+    },
+    "text": "prueba final"
   }
 ]
