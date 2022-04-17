@@ -83,7 +83,7 @@ socket.on('log',data=>{
     let messages = ''
     
     data.forEach(message => {
-        messages = messages+`<span class="email">${message.email}</span> <span class="date">${message.date}</span> dice <span class="message">${message.message}</span> <br>`
+        messages = messages+`<span class="email">${message.author.id}</span> <span class="date">${message.author.alias}</span> dice <span class="message">${message.text}</span> <br>`
     });
     log.innerHTML = messages
 })

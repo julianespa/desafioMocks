@@ -34,11 +34,17 @@ class LogManager{
     }
 
     get = async () => {
-        let tableExist = await this.database.schema.hasTable(this.tableName)
-        if(tableExist){
-            let results = await this.database.from(this.tableName).select('*')
-            let log = JSON.parse(JSON.stringify(results))
-            return{status:'success',payload:log}
+        // let tableExist = await this.database.schema.hasTable(this.tableName)
+        // if(tableExist){
+        //     let results = await this.database.from(this.tableName).select('*')
+        //     let log = JSON.parse(JSON.stringify(results))
+        //     return{status:'success',payload:log}
+        // }
+
+        if(fs.existsSync(pathToLog)){
+            let data = await fs.promises.readFile(pathToLog,'utf-8')
+            let logs = JSON.parse(data)
+            return {status:'success',payload:logs}
         }
         return{status:'success',message:'no messages to show'}
     }
